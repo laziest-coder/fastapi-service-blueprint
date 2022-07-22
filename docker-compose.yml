@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  python:
+    container_name: express24-service-name
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www
+    ports:
+      - "{port}:{port}"
+    working_dir: /var/www
+    env_file:
+      - ./.env
+    command: /bin/sh -c "uvicorn main:app --host=0.0.0.0 --port={port} --reload"
+
+networks:
+  default:
+    external:
+      name: express24-network
