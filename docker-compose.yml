@@ -1,8 +1,8 @@
 version: "3.8"
 
 services:
-  python:
-    container_name: express24-service-name
+  app:
+    container_name: {service_container_name}
     build:
       context: .
       dockerfile: Dockerfile
