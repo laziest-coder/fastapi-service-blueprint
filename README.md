@@ -1,5 +1,5 @@
-# How to use the blueprint
-This blueprint has been developed to boost development of microservices. You can
+# About the repository
+This repository has been developed to boost development of microservices in [Python FastAPI Framework](https://fastapi.tiangolo.com/). You can
 extend from it and do not worry about basic staffs like dockerizing app, make files, loggers and etc.
 
 ## TLDR
@@ -14,7 +14,7 @@ extend from it and do not worry about basic staffs like dockerizing app, make fi
 * Copy the generated token
 * Clone the repository by running command:
 ```
-git clone https://{token}@github.com/Express-24/fast-api-blueprint.git
+git clone https://{token}@github.com/laziest-coder/fastapi-service-blueprint.git
 ```
 
 ### Delete .git directory
@@ -34,8 +34,8 @@ rm -rf .git
 to endpoint `http://localhost:{port}/v1/example-route?order_id=32123`
 
 ### Create new repository on github
-* Head to [Express24 organization](https://github.com/Express-24)
-* Create new repository on [this page](https://github.com/organizations/Express-24/repositories/new)
+* Head to your repositories page
+* Create new repository on [this page](https://github.com/new)
 
 ### Add your project to remote github repository
 * `git init` to start tracking your project.
